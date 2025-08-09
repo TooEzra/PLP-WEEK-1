@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezra's Enhanced HTML5 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #555;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 6px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ezra's Enhanced HTML5 Form For Week 2 Assignment </h1>
+    <p>This page demonstrates the use of lists, tables, media, and an HTML5 form with validation.</p>
+</header>
+
+<section>
+    <h2>Lists Example</h2>
+    <ul>
+        <li>Organized content for clarity and accessibility</li>
+        <li>Embedded media using semantic HTML5 elements</li>
+        <li>Structured HTML5 forms</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Table Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>HTML5 Element</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>List</td>
+                <td>&lt;ul&gt;, &lt;ol&gt;</td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td>&lt;table&gt;</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>&lt;img&gt;</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Media Example</h2>
+    <figure>
+        <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg" alt="a person writing some codes " width="300">
+        <figcaption>Example of an embedded image.</figcaption>
+    </figure>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</section>
+
+<section>
+    <h2>HTML5 Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+
+            <label for="readonly">Referral Code (Read-Only):</label>
+            <input type="text" id="readonly" name="readonly" value="REF1234" readonly>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select...</option>
+                <option value="ke">Kenya</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms & Conditions
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; Ezra Enhanced HTML5 Form Demo</p>
+</footer>
+
+</body>
+</html>
